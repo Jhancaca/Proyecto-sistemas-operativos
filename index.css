@@ -375,22 +375,12 @@ body {
 .video-player {
     width: 100%;
     height: auto;
-    min-height: 300px;
+    min-height: 550px;
     background: #000;
     display: block;
     border: none;
 }
 
-/* controles personalizados del video */
-.video-player::-webkit-media-controls-panel {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.video-player::-webkit-media-controls-play-button,
-.video-player::-webkit-media-controls-pause-button {
-    background-color: #2196F3;
-    border-radius: 50%;
-}
 
 /* Responsive para videos */
 @media (max-width: 768px) {

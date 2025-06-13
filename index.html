@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Proyecto Final</title>
+</head>
+
+<body>
+    <!-- la barra lateral -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>📚 Sistemas Operativos</h2>
+            <p>Proyecto Final</p>
+        </div>
+        <nav class="sidebar-nav">
+            <button class="nav-button active" data-step="1">
+                <span>🐧 Linux</span>
+                <small>Instalación y configuración de distribuciones de Linux</small>
+            </button>
+            <button class="nav-button" data-step="2">
+                <span>📝 Editores</span>
+                <small>Instalación de editores de texto y entornos de desarrollo</small>
+            </button>
+            <button class="nav-button" data-step="3">
+                <span>⚙️ Scripts</span>
+                <small>Automatización con Bash</small>
+            </button>
+            <button class="nav-button" data-step="4">
+                <span>🐳 Docker</span>
+                <small>Instalación y uso de Docker</small>
+            </button>
+            <button class="nav-button" data-step="5">
+                <span>🐳 Docker Hub</span>
+                <small>Modificación y publicación en Docker Hub</small>
+            </button>
+            <button class="nav-button" data-step="6">
+                <span>☸️ Kubernetes</span>
+                <small>Uso de Kubernetes y Docker Hub</small>
+            </button>
+        </nav>
+    </div>
+
+    <!-- el boton toggle -->
+    <button class="toggle-btn" id="toggleBtn">☰</button>
+
+    <!-- contenido principal -->
+    <div class="main-content" id="mainContent">
+
+        <!-- punto 1 -->
+        <div class="content-card active" id="step-1">
+            <h1><span class="step-number">1</span>Instalación de Linux</h1>
+            <p>En este apartado se realiza la instalación de dos distribuciones de Linux: una con entorno gráfico y otra
+                en modo consola. Se configura cada una correctamente en máquinas virtuales, mostrando todo el proceso
+                con evidencias visuales.</p>
+
+            <h2>1.1 Instalación en ambiente gráfico</h2>
+            <p>Se realizó la instalación de la distribución Linux asignada en una máquina virtual con entorno gráfico.
+                Se configuraron correctamente los componentes del sistema, incluyendo dos navegadores y dos editores de
+                desarrollo.</p>
+
+            <div class="media-container">
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Configuracion_Maquina_virtual.png" alt="Configuración de máquina virtual">
+                </div>
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Pagina_principal_Kali_linux.png" alt="Configuración de máquina virtual">
+                </div>
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Opera_Navegador_VM.png" alt="Configuración de máquina virtual">
+                </div>
+
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Firefox_Navegador_VM.png" alt="Configuración de máquina virtual">
+                </div>
+
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Editor_visual_studio_VM.png" alt="Configuración de máquina virtual">
+                </div>
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Editor_Pycharm.png" alt="Configuración de máquina virtual">
+                </div>
+            </div>
+
+            <div class="video-container">
+                <iframe class="video-player"
+                    src="https://www.youtube.com/embed/JIVUlwpmnLI?modestbranding=1&rel=0&controls=1" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h2>1.2 Instalación en ambiente consola</h2>
+            <p>Se instaló la versión de la misma distribución en modo consola. Se habilitó la conexión a internet y se
+                instalaron herramientas básicas como make, git y curl.</p>
+
+            <div class="media-container">
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Configuracion_Ambiente_Consola.png" alt="Configuración de máquina virtual">
+                </div>
+
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Pantalla_Carga_Ambiente_Consola.png" alt="Configuración de máquina virtual">
+                </div>
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Pantalla_Principal_Ambiente_Consola.png" alt="Configuración de máquina virtual">
+                </div>
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Editor_Texto_Vim_Ambiente_Consola.png" alt="Configuración de máquina virtual">
+                </div>
+
+            </div>
+
+            <div class="video-container">
+                <iframe class="video-player"
+                    src="https://www.youtube.com/embed/QftWNUA8iCw?modestbranding=1&rel=0&controls=1" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+
+        <!-- punto 2 -->
+        <div class="content-card hidden" id="step-2">
+            <h1><span class="step-number">2</span>Editores y Entornos</h1>
+            <p>Esta sección muestra cómo se instalan y configuran diferentes editores de texto o entornos de desarrollo
+                dentro de las distribuciones Linux utilizadas. El objetivo es dejar listos los entornos para facilitar
+                el trabajo posterior.</p>
+
+            <h2>2.1 Instalación de editores y entornos</h2>
+            <p>En ambas distribuciones se instalaron al menos dos editores de texto o entornos de desarrollo (por
+                ejemplo, Vim y Nano en consola, Sublime Text y Atom en modo gráfico).</p>
+            <div class="media-container">
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Editor_Texto_Nano_Ambiente_Consola.png" alt="Configuración de máquina virtual">
+                </div>
+
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Editor_Texto_Gedit_Ambiente_Consola.png" alt="Configuración de máquina virtual">
+                </div>
+            </div>
+
+            <div class="video-container">
+                <iframe class="video-player"
+                    src="https://www.youtube.com/embed/5q79MaIvIf4?modestbranding=1&rel=0&controls=1" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- punto 3 -->
+        <div class="content-card hidden" id="step-3">
+            <h1><span class="step-number">3</span>Automatización con Bash</h1>
+            <p>Aquí se desarrollan dos scripts en Bash: uno pensado para ejecutarse desde el entorno gráfico y otro
+                desde la consola. Ambos automatizan tareas útiles del sistema y se explican con ejemplos funcionales.
+            </p>
+
+            <h2>3.1 Script en entorno gráfico</h2>
+            <p>Se desarrolló un script Bash para automatizar una tarea (como limpieza o backup), el cual se ejecuta
+                desde el entorno gráfico como una aplicación.</p>
+
+            <div class="media-container">
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Script_backup_Grafico.png" alt="Configuración de máquina virtual">
+                </div>
+
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Script_limpieza_grafico.png" alt="Configuración de máquina virtual">
+                </div>
+            </div>
+
+
+
+            <h2>3.2 Script en entorno consola</h2>
+            <p>Se creó otro script, ahora ejecutado desde la terminal, con una función similar de automatización.</p>
+            <div class="media-container">
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Script_limpieza_consola.png" alt="Configuración de máquina virtual">
+                </div>
+
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Script_backup_consola.png" alt="Configuración de máquina virtual">
+                </div>
+            </div>
+
+            <div class="video-container">
+                <iframe class="video-player"
+                    src="https://www.youtube.com/embed/BIPPOjVpoh0?modestbranding=1&rel=0&controls=1" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- punto 4 -->
+        <div class="content-card hidden" id="step-4">
+            <h1><span class="step-number">4</span>Docker</h1>
+            <p>Se presenta la instalación completa de Docker Desktop y la creación de una imagen personalizada
+                utilizando un Dockerfile. Luego, se lanza un contenedor basado en esta imagen, demostrando que funciona
+                correctamente.</p>
+
+            <h2>4.1 Instalación de Docker Desktop</h2>
+            <p>Se instaló Docker Desktop en el sistema anfitrión (Windows, Linux o Mac) y se verificó que funciona
+                correctamente.</p>
+
+            <div class="media-container">
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Docker_desktop.png" alt="Configuración de máquina virtual">
+                </div>
+
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/docker_version.png" alt="Configuración de máquina virtual">
+                </div>
+            </div>
+
+
+
+            <h2>4.2 Creación de imagen Docker</h2>
+            <p>Se creó una imagen personalizada mediante un Dockerfile, incluyendo herramientas como editores y
+                utilidades básicas.</p>
+            <div class="media-container">
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/imagen_docker_sencilla.png" alt="Configuración de máquina virtual">
+                </div>
+
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/imagen_construccion_sencilla.png" alt="Configuración de máquina virtual">
+                </div>
+            </div>
+
+            <div class="video-container">
+                <iframe class="video-player"
+                    src="https://www.youtube.com/embed/NKIuQ1j0gRc?modestbranding=1&rel=0&controls=1" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h2>4.3 Creación de contenedor</h2>
+            <p>Se ejecutó un contenedor a partir de la imagen creada y se comprobó su correcto funcionamiento.</p>
+            <div class="media-container">
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/docker_contenedor.png" alt="Configuración de máquina virtual">
+                </div>
+
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/docker_contenedor_nano.png" alt="Configuración de máquina virtual">
+                </div>
+            </div>
+        </div>
+
+        <!-- punto 5 -->
+        <div class="content-card hidden" id="step-5">
+            <h1><span class="step-number">5</span>Docker Hub</h1>
+            <p>En esta parte se modifica la imagen Docker previamente creada para añadir herramientas adicionales, y
+                luego se publica en Docker Hub. Se muestran los pasos realizados y el acceso público a la imagen.</p>
+
+            <h2>5.1 Modificación de imagen Docker</h2>
+            <p>La imagen Docker fue modificada para añadir nuevas aplicaciones (como herramientas ofimáticas o entornos
+                adicionales).</p>
+
+            <div class="media-container">
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/Imagen_docker_ofimaticas.png" alt="Configuración de máquina virtual">
+                </div>
+
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/docker_imagen_hub.png" alt="Configuración de máquina virtual">
+                </div>
+            </div>
+
+            <h2>5.2 Publicación en Docker Hub</h2>
+            <p>Se creó un repositorio en Docker Hub y se subió la imagen modificada, asegurando su disponibilidad
+                pública.</p>
+            <div class="media-container">
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/imagen_docker_hub.png" alt="Configuración de máquina virtual">
+                </div>
+
+                <div class="image-placeholder">
+                    <!--imagen-->
+                    <img src="images/docker_my_hub.png" alt="Configuración de máquina virtual">
+                </div>
+            </div>
+            <div class="video-container">
+                <iframe class="video-player"
+                    src="https://www.youtube.com/embed/FJCmayeqXw8?modestbranding=1&rel=0&controls=1" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+
+        </div>
+
+        <!-- punto 6 -->
+        <div class="content-card hidden" id="step-6">
+            <h1><span class="step-number">6</span>Kubernetes</h1>
+            <p>Se instala Kubernetes dentro de Docker Desktop y se crea un pod utilizando la imagen personalizada. Esta
+                sección demuestra el despliegue y funcionamiento básico de un contenedor en un entorno Kubernetes.</p>
+
+            <h2>6.1 Instalación en Docker Desktop</h2>
+            <p>Kubernetes fue habilitado dentro de Docker Desktop. Se realizaron las configuraciones necesarias para su
+                funcionamiento</p>
+
+            <div class="media-container">
+                <div class="image-placeholder">
+                    <img src="images/Instalacion_Kubernetes.png" alt="Configuración de máquina virtual">
+                </div>
+
+                <div class="image-placeholder">
+                    <img src="images/Instalacion_Kubernetes2.png" alt="Configuración de máquina virtual">
+                </div>
+            </div>
+
+            < <div class="video-container">
+                <iframe class="video-player"
+                    src="https://www.youtube.com/embed/FJCmayeqXw8?modestbranding=1&rel=0&controls=1" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+        </div>
+
+        <h2>6.2 Creación y ejecución de un pod</h2>
+        <p>Se creó un pod que ejecuta la imagen previamente trabajada. Se verifica su correcto despliegue en el
+            entorno Kubernetes.</p>
+
+        <div class="media-container">
+            <div class="image-placeholder">
+                <!--imagen-->
+                <img src="images/image.png.webp" alt="Configuración de máquina virtual">
+            </div>
+            <div class="image-placeholder">
+                <!--imagen-->
+                <img src="images/image (1).webp" alt="Configuración de máquina virtual">
+            </div>
+            <div class="image-placeholder">
+                <!--imagen-->
+                <img src="images/image (2).webp" alt="Configuración de máquina virtual">
+            </div>
+        </div>
+
+       
+        <div class="video-container">
+            <iframe class="video-player"
+                src="https://www.youtube.com/embed/hzletwCBiC4?modestbranding=1&rel=0&controls=1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+
+
+    </div>
+    </div>
+
+    <!-- el enlace javascript  -->
+    <script src="index.js"></script>
+</body>
+
+</html>
